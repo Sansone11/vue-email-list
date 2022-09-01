@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin:0 auto;
+    background-color:darkgrey;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+#root{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+ul,
+li{
+    list-style: none;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+    color: darkred;
+}
+.list__container{
+    height: 300px;
+    width: 30%;
+    background-color: white;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 10px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
