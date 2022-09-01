@@ -6,19 +6,22 @@ const app = new Vue({
     data: {
         mailList: new Array(),
     },
-    mathods: {
+    methods: {
         getEmail() {
             for (let i = 1; i <= 10; i++) {
                 axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
                     .then((res) => {
-                        console.log(result.data.response)
-                        this.getEmail = result.data.response
-                        this.mailList.push(getEmail)
+    
+                        console.log(res)
+                        this.mailList.push(res.data.response)
                     })
                    
             }
         }
     },
+    mounted(){
+        this.getEmail();
+    }
 })
 
 
